@@ -98,7 +98,7 @@ Class.create = function() {
 };
 
 // Manually keep a record of inheritance js in our node modules because it's not maintained anymore
-if (typeof window === 'undefined') {
+if (typeof module === 'object' && module.exports) {
     module.exports = Class;
 }
 
